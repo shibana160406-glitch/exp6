@@ -1,0 +1,14 @@
+name: Hello World Workflow
+
+# Controls when the action will run
+on: [push]
+
+jobs:
+  say-hello:
+    # Specifies the type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    steps:
+      # A single step that runs a shell command
+      - name: Greet the User
+        run: echo "Hello World!"
